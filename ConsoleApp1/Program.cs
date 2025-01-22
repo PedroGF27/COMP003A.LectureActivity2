@@ -31,10 +31,10 @@ namespace ConsoleApp1
             bool isAdult = userAge >= 18; // Ensures whether user is 18 or older
             bool isAdultStudent = isStudent && isAdult; // Checks if user is a student and also an adult
 
-            Console.WriteLine($"\nHello, {userName}");
-            Console.WriteLine($"You are currently {userAge} years old. In 5 years, you will be {futureAge}.");
-            Console.WriteLine($"Are you 18 or older? {isAdult}");
-            Console.WriteLine($"Are you both a student and 18 or older? {isAdultStudent}");
+            Console.WriteLine($"\nHello, {userName}"); // Greeting
+            Console.WriteLine($"You are currently {userAge} years old. In 5 years, you will be {futureAge}."); // Shows current and future age
+            Console.WriteLine($"Are you 18 or older? {isAdult}"); // Shows whether user is an adult
+            Console.WriteLine($"Are you both a student and 18 or older? {isAdultStudent}"); // Shows if the user is a student and also an adult
         }
     }
 }
