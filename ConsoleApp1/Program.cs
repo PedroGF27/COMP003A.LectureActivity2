@@ -31,8 +31,10 @@ namespace ConsoleApp1
             bool isAdult = userAge >= 18; // Ensures whether user is 18 or older
             bool isAdultStudent = isStudent && isAdult; // Checks if user is a student and also an adult
 
-
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine($"\nHello, {userName}");
+            Console.WriteLine($"You are currently {userAge} years old. In 5 years, you will be {futureAge}.");
+            Console.WriteLine($"Are you 18 or older? {isAdult}");
+            Console.WriteLine($"Are you both a student and 18 or older? {isAdultStudent}");
         }
     }
 }
