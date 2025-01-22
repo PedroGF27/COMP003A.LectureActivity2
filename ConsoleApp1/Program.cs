@@ -27,6 +27,11 @@ namespace ConsoleApp1
             Console.Write("Are you a student? (true/false): "); // indicate to user to tell whether they are a student or not
             isStudent = bool.Parse(Console.ReadLine()); // Takes the user's input
 
+            int futureAge = userAge + 5; // Calculate user's age in 5 years
+            bool isAdult = userAge >= 18; // Ensures whether user is 18 or older
+            bool isAdultStudent = isStudent && isAdult; // Checks if user is a student and also an adult
+
+
             Console.WriteLine("Hello, World!");
         }
     }
